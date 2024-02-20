@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/icon.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="weather">
+            <div class="container">
+                <div class="weather__search search">
+                    <form action="" class="search__form">
+                        <div class="search__input">
+                            <img src="./images/geolocation.svg" alt="" srcset="">
+                            <input type="text" placeholder="Search" id="city" spellcheck="false">
+                        </div>
+                        <button class="search__btn" type="submit">
+                            <img src="./images/search.svg" alt="" srcset="">
+                        </button>
+                    </form>
+                </div>                
+                <div id="weather__root"></div>
+            </div>
+            <div class="weather__bottom">
+                <img src="./images/bottom.svg" alt="">
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
