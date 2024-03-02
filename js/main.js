@@ -16,7 +16,7 @@ export let store = {
 const cityInput = document.getElementById('city');
 const searchButton  = document.querySelector('.search__btn');
 
-searchButton .addEventListener('click', (event) => {
+searchButton.addEventListener('click', (event) => {
     event.preventDefault();
     store.name = cityInput.value; // Updating the city in the store based on user input
     store.name !== "" ? getWeather(store) : {};
