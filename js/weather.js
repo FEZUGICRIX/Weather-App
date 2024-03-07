@@ -9,9 +9,13 @@ const root = document.getElementById('weather__root');
 
 export async function getWeather(store) {
     try {
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${store.name.trim()}&appid=${APIKey}`);
-        const data = await response.json();
+        const response = await fetch(
+            `https://api.openweathermap.org/data/2.5/weather?q=
+            ${store.name.trim()}&appid=${APIKey}`
+        );
 
+        const data = await response.json();
+        
         // Destructuring of the received data
         const {
             name,
