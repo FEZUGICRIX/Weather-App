@@ -79,11 +79,13 @@ body {
   border-radius: 30px;
   background: #fff;
   position: relative;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 .weather__search {
   margin-top: 37px;
 }
-.weather__search .search__form {
+.weather__search #search__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -377,7 +379,6 @@ body {
   }
   .weather {
     width: 90%;
-    height: auto;
   }
   .weather__bottom {
     display: none;
