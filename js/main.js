@@ -13,13 +13,15 @@ export let store = {
     speed: 0
 };
 
+const searchForm = document.getElementById('search__form');
 const cityInput = document.getElementById('city');
-const searchButton  = document.querySelector('.search__btn');
 
-searchButton.addEventListener('click', (event) => {
+searchForm.onsubmit = (event) => {
     event.preventDefault();
-    store.name = cityInput.value; // Updating the city in the store based on user input
+    // Updating the city in the store based on user input
+    store.name = cityInput.value;
     store.name !== "" ? getWeather(store) : {};
-});
+};
 
+// Triggering weather retrieval if the city is not empty
 store.name !== "" ? getWeather(store) : {};
