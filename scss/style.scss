@@ -26,17 +26,19 @@ body {
   border-radius: 30px;
   background: $white;
   position: relative;
+  transition: all 1s ease;
 
   &__search {
     margin-top: 37px;
+
+    #search__form {
+      display: flex;
+      justify-content: space-between;
+      gap: 27px;
+      width: 100%;
+    }
+
     .search {
-      &__form {
-        display: flex;
-        justify-content: space-between;
-        gap: 27px;
-        width: 100%;
-      }
-      
       &__input {
         display: flex;
         align-items: center;
@@ -45,7 +47,7 @@ body {
         padding-left: 10px;
         border-radius: 25px;
         background: $main-color;
-        
+
         #city {
           height: 40px;
           width: 85%;
@@ -55,7 +57,7 @@ body {
           font-size: 23px;
         }
       }
-      
+
       &__btn {
         background: $main-color;
         border-radius: 50%;
@@ -334,7 +336,6 @@ body {
 
   .weather {
     width: 90%;
-    height: auto;
 
     &__bottom {
       display: none;
