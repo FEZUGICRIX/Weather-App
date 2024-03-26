@@ -42,14 +42,11 @@ body {
       &__input {
         display: flex;
         align-items: center;
-        width: 100%;
-        height: 70px;
         padding-left: 10px;
         border-radius: 25px;
         background: $main-color;
 
         #city {
-          height: 40px;
           width: 85%;
           background: inherit;
           outline: none;
@@ -311,8 +308,8 @@ body {
     }
     
     .error {
-      &__img img {
-        width: 50%;
+      &__img {
+        width: 250px;
       }
     }
   }
@@ -330,10 +327,6 @@ body {
 }
 
 @media (max-height: $max-height ) and (max-width: $medium-screen) {
-  .wrapper {
-    width: 100%;
-  }
-
   .weather {
     width: 90%;
 
