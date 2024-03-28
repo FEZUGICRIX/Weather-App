@@ -16,12 +16,12 @@ export let store = {
 const searchForm = document.getElementById('search__form');
 const cityInput = document.getElementById('city');
 
-searchForm.onsubmit = (event) => {
+searchForm.addEventListener('submit', (event) => {
     event.preventDefault();
     // Updating the city in the store based on user input
     store.name = cityInput.value;
     store.name !== "" ? getWeather(store) : {};
-};
+});
 
 // Triggering weather retrieval if the city is not empty
 store.name !== "" ? getWeather(store) : {};
