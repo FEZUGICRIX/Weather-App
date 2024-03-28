@@ -20,7 +20,6 @@ export async function getWeather(store) {
         const {
             name,
             clouds: { all: clouds },
-            cod,
             main: { temp, humidity, pressure },
             weather: [{ description, main, icon }],
             wind: { speed },
@@ -52,4 +51,4 @@ export async function getWeather(store) {
         errorMarkUp(store.name);
         console.error(`Error fetching data: ${error}`);
     };
-}
+};
